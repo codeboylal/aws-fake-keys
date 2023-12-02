@@ -15,6 +15,9 @@ resource "aws_instance" "my_ec2_instance" {
   ami           = "ami-0fc5d935ebf8bc3bc"
   instance_type = "t2.micro"
 
+Access key ID: 	AKIA4WVUNIYLQLRAAAAA
+Secret access key: 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
+
   key_name = "test-key"
 
   security_groups = [aws_security_group.allow_ssh.name]
