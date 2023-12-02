@@ -10,7 +10,7 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
-resource "aws_instance" "my_ec2_instance" {
+resource "aws_instance"{
 
   ami           = "ami-0fc5d935ebf8bc3bc"
   instance_type = "t2.micro"
@@ -27,7 +27,7 @@ Secret access key: 3Y3Ho8LaRA13MsmdMUJJJJJ39X0XBVtzyPw3T+rK
   }
 }
 
-resource "aws_security_group" "allow_ssh" {
+resource "aws_security_group"  {
   name        = "allow-ssh"
   description = "Allow inbound SSH traffic"
 
